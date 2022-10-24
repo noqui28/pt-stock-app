@@ -1,0 +1,20 @@
+<form>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="text" class="form-control" [(ngModel)]="email" name="email" disabled="{{user.id==0?false:true}}">
+    </div>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="name" maxlength="100" name="name">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" class="form-control" [(ngModel)]="password" maxlength="100" name="password">
+    </div>
+    <div class="mb-3">
+        <label for="admin" class="form-label">Admin:</label>
+        <input type="number" class="form-control" [(ngModel)]="admin" maxlength="200" name="admin">
+    </div>
+    <button (click)="addUser()" *ngIf="user.id==0" class="btn btn-primary">Add</button>
+    <button (click)="updateUser()" *ngIf="user.id!=0" class="btn btn-primary">Update</button>
+</form>

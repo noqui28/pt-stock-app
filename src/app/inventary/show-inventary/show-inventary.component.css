@@ -1,0 +1,23 @@
+#add-inv-success-alert,
+#update-inv-success-alert,
+#delete-inv-success-alert {
+    display: none;
+}
+
+#add-inv-success-alert,
+#update-inv-success-alert,
+#delete-inv-success-alert {
+    animation: fadeInAndOut 4s;
+}
+
+@-webkit-keyframes fadeInAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeInAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}

@@ -1,0 +1,23 @@
+#add-user-success-alert,
+#update-user-success-alert,
+#delete-user-success-alert {
+    display: none;
+}
+
+#add-user-success-alert,
+#update-user-success-alert,
+#delete-user-success-alert {
+    animation: fadeInAndOut 4s;
+}
+
+@-webkit-keyframes fadeInAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeInAndOut {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
